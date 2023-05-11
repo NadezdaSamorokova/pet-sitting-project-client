@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url(./styles/HomePage.css);
+@import url(./styles/NavbarAnon.css);
+@import url(./styles/Auth.css);

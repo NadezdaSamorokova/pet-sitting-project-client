@@ -44,32 +44,29 @@ function SignupPage(props) {
 
   
   return (
-    <div className="SignupPage">
-      <h1>Sign Up</h1>
+    <div className="AuthPage">
+      <h1 className="auth-title">Sign Up</h1>
 
-      <form onSubmit={handleSignupSubmit}>
-        <label>Email:</label>
-        <input type="email" name="email" value={email} onChange={handleEmail} />
+      <form className="auth-form" onSubmit={handleSignupSubmit}>
+        <input className="auth-input" type="email" name="email" value={email} placeholder="Email" onChange={handleEmail} />
 
-        <label>Password:</label>
-        <input type="password" name="password" value={password} onChange={handlePassword} />
+        <input className="auth-input" type="password" name="password" value={password} placeholder="Password" onChange={handlePassword} />
 
-        <label>Name:</label>
-        <input type="text" name="username" value={username} onChange={handleUsername} />
+        <input className="auth-input" type="text" name="username" value={username} placeholder="Username" onChange={handleUsername} />
 
-        <label for="select-role">Are you an owner ore a sitter?:</label>
-        <select onChange={handleRole}>
-          <option value="owner">Owner</option>
+        <label className="selectRole" for="select-role">Are you an parent or a sitter?</label>
+        <select className="dropdown-role" onChange={handleRole}>
+          <option value="owner">Parent</option>
           <option value="sitter">Sitter</option>
         </select>
 
-        <button type="submit">Sign Up</button>
+        <button className="auth-button" type="submit">Sign Up</button>
       </form>
 
       { errorMessage && <p className="error-message">{errorMessage}</p> }
 
-      <p>Already have account?</p>
-      <Link to={"/login"}> Login</Link>
+      <p className="auth-text">Already have account?</p>
+      <Link className="auth-link" to={"/login"}> Login</Link>
     </div>
   )
 }
