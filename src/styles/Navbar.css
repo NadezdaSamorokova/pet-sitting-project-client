@@ -52,6 +52,13 @@
     align-items: center;
 }
 
+.profile-links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
 .log-link {
     border: none;
     background: 0;
