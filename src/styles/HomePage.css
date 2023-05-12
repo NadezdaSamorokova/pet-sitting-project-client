@@ -31,6 +31,10 @@
     color: #A52A2A;
 }
 
+.title-span {
+    text-transform: uppercase;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;

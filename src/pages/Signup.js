@@ -48,11 +48,12 @@ function SignupPage(props) {
       <h1 className="auth-title">Sign Up</h1>
 
       <form className="auth-form" onSubmit={handleSignupSubmit}>
+
+        <input className="auth-input" type="text" name="username" value={username} placeholder="Username" onChange={handleUsername} />
+
         <input className="auth-input" type="email" name="email" value={email} placeholder="Email" onChange={handleEmail} />
 
         <input className="auth-input" type="password" name="password" value={password} placeholder="Password" onChange={handlePassword} />
-
-        <input className="auth-input" type="text" name="username" value={username} placeholder="Username" onChange={handleUsername} />
 
         <label className="selectRole" for="select-role">Are you an parent or a sitter?</label>
         <select className="dropdown-role" onChange={handleRole}>

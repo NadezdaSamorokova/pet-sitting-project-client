@@ -1,0 +1,58 @@
+.PetList {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1184px;
+    margin: 0 auto;
+}
+
+.petList-sort {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    margin: 40px 0 0;
+}
+
+.button-all {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    color: #556B2F;
+    margin: 0 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: #556B2F solid 1px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.button-filter {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 0 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: #556B2F solid 1px;
+    cursor: pointer;
+}
+
+.filter-image {
+    width: 22px;
+    object-fit: cover;
+}
+
+.filter-text {
+    margin: 0;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    color: #556B2F;
+}

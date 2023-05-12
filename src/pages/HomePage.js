@@ -8,7 +8,7 @@ function HomePage() {
       <div className="homePage">
         <div className="introduction">
           <div className="introduction-section">
-             <h1 className="title">PetPrivet<br/>von Berlin</h1>
+             <h1 className="title"><span className="title-span">Petmypet</span><br/>in Berlin</h1>
              <div className="buttons">
                <Link className="link" to="/sitter-list"><button className="homePage-button">Find a sitter</button></Link>
                <Link className="link" to="/pet-list"><button className="homePage-button">Find a pet</button></Link>
