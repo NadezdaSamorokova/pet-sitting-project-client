@@ -2,6 +2,7 @@ import Corgi from "../images/PetList/Corgi.png"
 import Cat from "../images/PetList/Cat.png"
 import Mouse from "../images/PetList/Mouse.png"
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function PetList () {
@@ -35,14 +36,17 @@ function PetList () {
             </button>
           </div>
 
+          <Link className="card-link" to="/pet-card">
           <div className="pets">
             {pets.map((pet) => (
               <div key={pet._id} className="pet"> 
                 <img className="petImage" src={pet.image} alt ="petsPicture"/>
-                <p className="petName">{pet.name}</p>
+                <p className="petName"><b>Name:</b> {pet.name}</p>
+                <p className="petDates"><b>Availability dates:</b><br/>{pet.dates}</p>
               </div>
             ))}
           </div>
+          </Link>
       </div>
     )
 }
