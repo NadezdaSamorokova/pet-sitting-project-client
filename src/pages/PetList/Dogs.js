@@ -18,14 +18,14 @@ function Dogs () {
   if(!dogs) return <p>Loading ...</p>
 
     return (
-            <div className="PetList">
+            <div className="List">
             <SortButtons/> 
-              <div className="pets">
+              <div className="list-container">
                 {dogs.map((dog) => (
-                <Link className="card-link" to="/pet-list/pet-card">
-                  <div key={dog._id} className="pet"> 
-                    <img className="petImage" src={dog.image} alt ="petsPicture"/>
-                    <p className="petName"><b>Name:</b> {dog.name}</p>
+                <Link className="card-link" to={`/pet-list/${dog._id}`}>
+                  <div key={dog._id} className="list-card"> 
+                    <img className="listImage" src={dog.image} alt ="petsPicture"/>
+                    <p className="listName"><b>Name:</b> {dog.name}</p>
                     <p className="petDates"><b>Availability dates:</b><br/>{dog.dates}</p>
                   </div>
                 </Link>

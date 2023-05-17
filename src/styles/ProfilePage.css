@@ -1,0 +1,75 @@
+.ProfilePage {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1184px;
+    margin: 0 auto;
+}
+
+.edit-profile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    margin: 40px 0 0;
+}
+
+.profile-title {
+    margin: 0 15px 0 0;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.edit-button {
+    align-self: center;
+    background-color: #fff;
+    background-image: url("../images/edit-button.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 25px;
+    padding: 0;
+    width: 25px;
+    background-size: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    margin: 50px 0 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0 100px 0 0;
+}
+
+.info-text {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: start;
+}
+
+.profile-picture {
+    background-image: url("../images/PetList/picture-placeholder.png");
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-size: cover;
+    height: 400px;
+}
+
+.text-bold {
+    font-size: 28px;
+    margin-right: 10px;
+}

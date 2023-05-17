@@ -3,15 +3,16 @@
     flex-direction: column;
     position: relative;
     width: 1184px;
-    margin: 0 auto;
+    margin: 35px auto 0;
 }
 
 .introduction {
-    background-image: url("../images/Homepage/main-picture.jpg");
+   /* background-image: url("../images/Homepage/main-picture.jpg");*/
+    background-image: url("../images/Homepage/ersatz.jpg");
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
-    padding: 150px 150px 150px 40px;
+    height: 700px;
     border-radius: 5px;
 }
 
@@ -20,7 +21,7 @@
     flex-direction: column;
     position: relative;
     width: 400px;
-    padding: 50px 50px 50px 0;;
+    padding: 450px 50px 0 30px;
 }
 
 .title {
@@ -51,12 +52,12 @@
 .homePage-button {
   width: 150px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.2;
   text-align: center;
   background-color: #556B2F;
   color: #eceaea;
-  margin: 40px 25px 0 0;
+  margin: 0 25px 0 0;
   padding: 16px;
   border-radius: 10px;
   border: none;

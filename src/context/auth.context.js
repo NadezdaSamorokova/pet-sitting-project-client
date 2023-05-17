@@ -26,6 +26,8 @@ function AuthProviderWrapper(props) {
       authService.verify()
         .then((response) => {
           const user = response.data;
+
+          console.log("USSSSEEEEERRR", user)
         // Update state variables        
           setIsLoggedIn(true);
           setIsLoading(false);

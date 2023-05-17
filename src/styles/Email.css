@@ -1,0 +1,37 @@
+.Email {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    margin: 200px auto;
+    width: 1184px;
+}
+
+.email-text {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 30px;
+}
+
+.span {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.1;
+    align-self: start;
+    margin: 0 0 0 100px;
+}
+
+.email-button {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    background-color: #556B2F;
+    color: #eceaea;
+    margin: 100px 0 0;
+    padding: 16px 50px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Email() {
     return (
-      <div>
-        <p>Your Application has been sent via e-mail. Expect the answer from the owner! 
-
-        ... or not</p>
-        <button>Return to main Page</button>
+      <div className="Email">
+        <p className="email-text">Your Application has been sent via e-mail. Expect the answer from the owner!</p>
+        <p className="span">... or not</p>
+        
+        <Link className="link" to="/"><button className="email-button">Return to main Page</button></Link>
       </div>
     );
   }

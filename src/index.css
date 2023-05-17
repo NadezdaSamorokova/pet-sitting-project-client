@@ -15,4 +15,9 @@ code {
 @import url(./styles/HomePage.css);
 @import url(./styles/Navbar.css);
 @import url(./styles/Auth.css);
-@import url(./styles/PetList.css);
+@import url(./styles/ListPages.css);
+@import url(./styles/Card.css);
+@import url(./styles/Review.css);
+@import url(./styles/Footer.css);
+@import url(./styles/Email.css);
+@import url(./styles/ProfilePage.css);

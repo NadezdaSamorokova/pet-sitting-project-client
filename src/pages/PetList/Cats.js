@@ -18,14 +18,14 @@ function Cats () {
   if(!cats) return <p>Loading ...</p>
 
     return (
-            <div className="PetList">
+            <div className="List">
             <SortButtons/> 
-              <div className="pets">
+              <div className="list-container">
                 {cats.map((cat) => (
-                <Link className="card-link" to="/pet-list/pet-card">
-                  <div key={cat._id} className="pet"> 
-                    <img className="petImage" src={cat.image} alt ="petsPicture"/>
-                    <p className="petName"><b>Name:</b> {cat.name}</p>
+                <Link className="card-link" to={`/pet-list/${cat._id}`}>
+                  <div key={cat._id} className="list-card"> 
+                    <img className="listImage" src={cat.image} alt ="petsPicture"/>
+                    <p className="listName"><b>Name:</b> {cat.name}</p>
                     <p className="petDates"><b>Availability dates:</b><br/>{cat.dates}</p>
                   </div>
                 </Link>

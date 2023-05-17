@@ -1,0 +1,54 @@
+.Review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin: 60px 0 0;
+}
+
+.review-section {
+    margin: 0;
+}
+
+.reviewForm-section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.reviewForm-title {
+    margin: 15px 0 0;
+    font-size: 23px;
+}
+
+.reviewForm {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: solid 3px #556B2F;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 35px 0;
+    padding: 45px;
+    align-self: center;
+}
+
+.reviewForm-input {
+    margin: 10px 0 0;
+    font-family: Helvetica;
+}
+
+.reviewForm-button {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    background-color: #556B2F;
+    color: #eceaea;
+    margin: 40px 0 0;
+    padding: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}

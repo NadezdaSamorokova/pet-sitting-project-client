@@ -1,0 +1,19 @@
+.Footer {
+    position: relative;
+    background-color: #556B2F;
+    color: #eceaea;
+    margin: 0;
+    padding: 8px 15px;
+    text-align: start;
+    border-radius: 10px;
+}
+
+h3 {
+    margin: 0 0 10px;
+}
+
+.footer-text {
+    font-size: 12px;
+    line-height: 1;
+    margin: 0;
+}

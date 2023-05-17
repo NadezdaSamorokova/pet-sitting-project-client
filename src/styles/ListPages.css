@@ -1,9 +1,17 @@
-.PetList {
+.List {
     display: flex;
     flex-direction: column;
     position: relative;
     width: 1184px;
     margin: 0 auto;
+}
+
+.sitters-title {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 50px 0 0;
+    color: #556B2F;
 }
 
 .petList-sort {
@@ -62,14 +70,14 @@
     color: black;
 }
 
-.pets {
+.list-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 40px 50px 0;
 }
 
-.pet {
+.list-card {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -80,14 +88,14 @@
     padding: 20px 0;
 }
 
-.petImage {
+.listImage {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.petName {
+.listName {
     margin: 8px 0 0;
     font-size: 18px;
     font-weight: 400;
@@ -99,4 +107,27 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
+}
+
+.like-buttons {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 10px 0 0;
+}
+
+.like-button {
+    align-self: center;
+    background-color: #fff;
+    background-image: url("../images/heart.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 25px;
+    padding: 0;
+    width: 25px;
+    background-size: cover;
 }

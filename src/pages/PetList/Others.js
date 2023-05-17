@@ -18,14 +18,14 @@ function Others () {
   if(!others) return <p>Loading ...</p>
 
     return (
-            <div className="PetList">
+            <div className="List">
             <SortButtons/> 
-              <div className="pets">
+              <div className="list-container">
                 {others.map((other) => (
-                <Link className="card-link" to="/pet-list/pet-card">
-                  <div key={other._id} className="pet"> 
-                    <img className="petImage" src={other.image} alt ="petsPicture"/>
-                    <p className="petName"><b>Name:</b> {other.name}</p>
+                <Link className="card-link" to={`/pet-list/${other._id}`}>
+                  <div key={other._id} className="list-card"> 
+                    <img className="listImage" src={other.image} alt ="petsPicture"/>
+                    <p className="listName"><b>Name:</b> {other.name}</p>
                     <p className="petDates"><b>Availability dates:</b><br/>{other.dates}</p>
                   </div>
                 </Link>
