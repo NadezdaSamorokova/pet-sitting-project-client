@@ -18,8 +18,6 @@ function Review (props) {
     e.preventDefault();
     axios.post(`${API_URL}/pets/pets/${petId}/reviews`, { username, review })
       .then((response) => {
-        // Redirect logic if needed
-        // Example: history.push(`/wines/${response.data.winename}`);
         props.getPet();
         setUsername('');
         setReview('');
@@ -30,7 +28,6 @@ function Review (props) {
       });
   };
   
-
     return (
         <div className="Review">
           <div className="review-post">

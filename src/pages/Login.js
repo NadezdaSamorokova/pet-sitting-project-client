@@ -21,8 +21,6 @@ function LoginPage(props) {
     e.preventDefault();
     const requestBody = { email, password };
 
-    // axios.post(`${API_URL}/auth/login`, requestBody
-
     authService.login(requestBody)
       .then((response) => {
         console.log("JWT token", response.data.authToken);
@@ -36,8 +34,6 @@ function LoginPage(props) {
       	setErrorMessage(errorDescription);
     	})
   };
-
-
   
   return (
     <div className="AuthPage">
