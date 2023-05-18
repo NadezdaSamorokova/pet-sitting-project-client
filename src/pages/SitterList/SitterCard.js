@@ -7,7 +7,7 @@ function SitterCard () {
   const singleUser = useParams().userId
   console.log("NEW CHECK USER", singleUser)
 
-  const API_URL = process.env.REACT_APP_SERVER_URL
+  const API_URL = process.env.REACT_APP_API_URL
 
   /*useEffect(() => {
     axios.get(`http://localhost:5005/pets/pets/${petId}`)

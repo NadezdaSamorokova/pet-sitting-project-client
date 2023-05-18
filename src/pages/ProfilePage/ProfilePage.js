@@ -5,7 +5,7 @@ import axios from "axios";
 function ProfilePage () {
   const [user, setUser] = useState();
 
-  const API_URL = process.env.REACT_APP_SERVER_URL
+  const API_URL = process.env.REACT_APP_API_URL
 
   useEffect (() => {
     const storedToken = localStorage.getItem("authToken");

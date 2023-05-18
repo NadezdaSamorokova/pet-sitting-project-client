@@ -6,7 +6,7 @@ import axios from "axios";
 function EditProfilePage () {
     const {user} = useContext(AuthContext);
 
-    const API_URL = process.env.REACT_APP_SERVER_URL
+    const API_URL = process.env.REACT_APP_API_URL
 
     const [username, setUsername] = useState(user?.username || ''); // Initialer Wert auf leeren String setzen
   

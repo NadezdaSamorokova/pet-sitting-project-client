@@ -7,7 +7,7 @@ function Dogs () {
   const [dogs, setDogs] = useState([]);
   console.log('doooooooooooooogs',dogs);
 
-  const API_URL = process.env.REACT_APP_SERVER_URL
+  const API_URL = process.env.REACT_APP_API_URL
 
   useEffect(() => {
     axios.get(`${API_URL}/pets/dogs`)

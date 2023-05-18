@@ -12,7 +12,7 @@ function Review (props) {
 
   console.log("PRRRRROPS", props)
 
-  const API_URL = process.env.REACT_APP_SERVER_URL
+  const API_URL = process.env.REACT_APP_API_URL
 
   const handleReviewSubmit = (e) => {
     e.preventDefault();

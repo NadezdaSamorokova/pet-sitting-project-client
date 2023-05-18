@@ -9,7 +9,7 @@ function PetCard () {
   const petId = useParams().id;
   console.log("GGGGGG", pet);
 
-  const API_URL = process.env.REACT_APP_SERVER_URL
+  const API_URL = process.env.REACT_APP_API_URL
 
   /*useEffect(() => {
     axios.get(`http://localhost:5005/pets/pets/${petId}`)
