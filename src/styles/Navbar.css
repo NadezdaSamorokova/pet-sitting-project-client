@@ -9,6 +9,10 @@
     border-bottom: solid 2px #DCDCDC;
 }
 
+button {
+    font-family: 'Rubik', sans-serif;
+}
+
 .nav-section {
     display: flex;
     flex-direction: row;

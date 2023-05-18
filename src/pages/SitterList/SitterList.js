@@ -4,11 +4,12 @@ import axios from "axios";
 
 function SitterList () {
   const [sitters, setSitters] = useState([]);
-
   console.log("SSSSFRSHDTHEDTH", sitters)
 
+  const API_URL = process.env.REACT_APP_SERVER_URL
+
   useEffect(() => {
-    axios.get('http://localhost:5005/auth/sitters')
+    axios.get(`${API_URL}/auth/sitters`)
     .then(response => {
     console.log("DDDDDDDDDD", response.data.usersFromDB)
       setSitters(response.data.usersFromDB)
@@ -21,7 +22,7 @@ function SitterList () {
         <h1 className="sitters-title">Let's find your perfect pet sitter</h1>
           <div className="list-container">
             {sitters.map((sitter) => (
-              <Link className="card-link" to="/sitter-list/sitter-card"> 
+              <Link className="card-link" to={`/sitter-list/${sitter._id}`}> 
                <div key={sitter._id} className="list-card"> 
                 <img className="listImage" src={sitter.image} alt ="Sitter Picture"/>
                 <p className="listName"><b>Name:</b> {sitter.username}</p>

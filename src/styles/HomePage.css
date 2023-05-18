@@ -3,7 +3,8 @@
     flex-direction: column;
     position: relative;
     width: 1184px;
-    margin: 35px auto 0;
+    margin: 35px auto;
+    min-height: 900px;
 }
 
 .introduction {

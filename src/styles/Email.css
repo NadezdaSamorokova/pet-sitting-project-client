@@ -5,6 +5,7 @@
     align-items: center;
     margin: 200px auto;
     width: 1184px;
+    min-height: 900px;
 }
 
 .email-text {

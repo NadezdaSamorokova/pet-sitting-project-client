@@ -18,6 +18,7 @@ import Navbar from './pages/Navbar';
 import IsPrivat from "./components/IsPrivate";
 import ProfilePage from './pages/ProfilePage/ProfilePage';
 import EditProfilePage from './pages/ProfilePage/EditProfilePage';
+import Footer from './pages/Footer';
 
 function App() { 
   return (
@@ -34,7 +35,7 @@ function App() {
           <Route path="/profile/:id" element={<IsPrivat> <EditProfilePage /> </IsPrivat>} />
 
         <Route path="/sitter-list" element={<SitterList />} />
-          <Route path="/sitter-list/sitter-card" element={ <IsPrivat> <SitterCard /> </IsPrivat>} />
+          <Route path="/sitter-list/:userId" element={ <IsPrivat> <SitterCard /> </IsPrivat>} />
           <Route path="/sitter-list/sitter-card/email" element={ <IsPrivat> <EmailPage /> </IsPrivat>} />
 
         <Route path="/pet-list" element={<PetList />} />
@@ -44,6 +45,7 @@ function App() {
           <Route path="/pet-list/:id" element={ <IsPrivat> <PetCard /> </IsPrivat>} />
           <Route path="/pet-list/pet-card/email" element={ <IsPrivat> <EmailPage /> </IsPrivat>} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

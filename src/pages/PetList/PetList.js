@@ -5,11 +5,12 @@ import SortButtons from "./SortButtons";
 
 function PetList () {
   const [pets, setPets] = useState([]);
-
   console.log(pets)
 
+  const API_URL = process.env.REACT_APP_SERVER_URL
+
   useEffect(() => {
-    axios.get('http://localhost:5005/pets/pets')
+    axios.get(`${API_URL}/pets/pets`)
     .then(response => {
       setPets(response.data.petsFromDB)
     })

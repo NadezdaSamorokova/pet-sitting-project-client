@@ -6,8 +6,10 @@ import Review from "../Review";
 
 function PetCard () {
   const [pet, setPet] = useState(null);
-  const petId = useParams().id
-  console.log("GGGGGG", pet)
+  const petId = useParams().id;
+  console.log("GGGGGG", pet);
+
+  const API_URL = process.env.REACT_APP_SERVER_URL
 
   /*useEffect(() => {
     axios.get(`http://localhost:5005/pets/pets/${petId}`)
@@ -18,7 +20,7 @@ function PetCard () {
   }, [])*/
 
   const getPet = () => {
-    axios.get(`http://localhost:5005/pets/pets/${petId}`)
+    axios.get(`${API_URL}/pets/pets/${petId}`)
     .then(response => {
       setPet(response.data.petFromDB)
       console.log("DDDDDDDD", response.data.petFromDB)

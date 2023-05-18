@@ -4,6 +4,7 @@
     position: relative;
     width: 1184px;
     margin: 0 auto;
+    min-height: 900px;
 }
 
 .sitters-title {
@@ -74,7 +75,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: 40px 50px 0;
+    margin: 40px 50px;
 }
 
 .list-card {

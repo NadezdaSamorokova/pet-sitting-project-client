@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import home from "../images/home.png";
+import logo from "../images/logo.png";
 import { useContext } from 'react';
 import { AuthContext } from '../context/auth.context';
 
@@ -10,7 +10,7 @@ function Navbar () {
     return (
         <nav className="navgation">
           <div className="nav-section">
-            <Link className="link" to="/"><img className="logo" src={home} alt="home"></img></Link>
+            <Link className="link" to="/"><img className="logo" src={logo} alt="home"></img></Link>
             <div className="find-links">
               <Link className="link" to="/sitter-list"><button className="find-link">Find a sitter</button></Link>
               <Link className="link" to="/pet-list"><button className="find-link">Find a pet</button></Link>

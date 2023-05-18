@@ -12,9 +12,11 @@ function Review (props) {
 
   console.log("PRRRRROPS", props)
 
+  const API_URL = process.env.REACT_APP_SERVER_URL
+
   const handleReviewSubmit = (e) => {
     e.preventDefault();
-    axios.post(`http://localhost:5005/pets/pets/${petId}/reviews`, { username, review })
+    axios.post(`${API_URL}/pets/pets/${petId}/reviews`, { username, review })
       .then((response) => {
         // Redirect logic if needed
         // Example: history.push(`/wines/${response.data.winename}`);

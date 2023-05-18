@@ -4,6 +4,7 @@
     position: relative;
     width: 1184px;
     margin: 0 auto;
+    min-height: 900px;
 }
 
 .edit-profile {
@@ -72,4 +73,35 @@
 .text-bold {
     font-size: 28px;
     margin-right: 10px;
+}
+
+.usernameEdit {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0;
+    border: none;
+}
+
+.usernameEdit-input {
+    height: 30px;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.save-button {
+    align-self: center;
+    background-color: #fff;
+    background-image: url("../images/save.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    border-radius: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 25px;
+    padding: 0;
+    width: 25px;
+    background-size: cover;
 }

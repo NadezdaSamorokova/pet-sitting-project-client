@@ -1,9 +1,12 @@
 import { AuthContext } from "../../context/auth.context"
 import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 function EditProfilePage () {
     const {user} = useContext(AuthContext);
+
+    const API_URL = process.env.REACT_APP_SERVER_URL
 
     const [username, setUsername] = useState(user?.username || ''); // Initialer Wert auf leeren String setzen
   
@@ -18,7 +21,7 @@ function EditProfilePage () {
     
         console.log("is it calling this function?", {username})
       //const token = localStorage.getItem("authToken");
-      axios.put(`http://localhost:5005/auth/users/${user._id}` , {username} )
+      axios.put(`${API_URL}/auth/users/${user._id}` , {username} )
         .then(response => {
             console.log("this is working")
           
@@ -34,15 +37,12 @@ function EditProfilePage () {
           </div>
           <div className="user-info">
             <form className="info">
-            <fieldset>
-               <input className="info-text" type="text" name="username" placeholder="Username" onChange={handleUsernameChange}/>
-               <button type="submit" className="save" onClick={handleSaveUsername}>Send</button>
-            </fieldset>
-            <fieldset>
-               <input className="info-text" type="email" name="email" placeholder="Email"/>
-               <button className="save"></button>
-            </fieldset>
-                <p className="info-text"><b className="text-bold">Role:</b> {user?.role}</p>
+              <fieldset className="usernameEdit">
+                 <input className="usernameEdit-input" type="text" name="username" placeholder="Username edit" onChange={handleUsernameChange}/>
+                 <Link className="card-link" to="/profile"><button className="save-button" type="submit" onClick={handleSaveUsername}></button></Link>
+              </fieldset>
+              <p className="info-text"><b className="text-bold">E-Mail:</b> {user?.email}</p>
+              <p className="info-text"><b className="text-bold">Role:</b> {user?.role}</p>
             </form>
             <img className="profile-picture" src={user?.image} als="picture"/>
           </div>

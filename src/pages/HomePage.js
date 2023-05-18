@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Dog from "../images/Homepage/about-dog.jpg"
 import Cat from "../images/Homepage/about-cat.jpg"
 import HighFive from "../images/Homepage/about-highfive.jpg"
-import Footer from './Footer';
 
 function HomePage() {
     return (
@@ -33,7 +32,6 @@ function HomePage() {
             <p className="aboutText">Pets thrive in the comfort of their own homes, receiving abundant love, care, and companionship from a dedicated sitter.</p>
           </div>
         </div>
-        <Footer/>
       </div>
     );
   }
