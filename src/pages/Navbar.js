@@ -3,10 +3,13 @@ import logo from "../images/logo.png";
 import { useContext } from 'react';
 import { AuthContext } from '../context/auth.context';
 
+// React component for the Navigation bar
 function Navbar () {
 
+  // Access authentication state and functions from AuthContext using useContext
   const { isLoggedIn, logOutUser } = useContext(AuthContext);
 
+  // Render the Navigation bar based on user authentication status
     return (
         <nav className="navgation">
           <div className="nav-section">

@@ -20,7 +20,9 @@ import ProfilePage from './pages/ProfilePage/ProfilePage';
 import EditProfilePage from './pages/ProfilePage/EditProfilePage';
 import Footer from './pages/Footer';
 
+// Main App component that defines the structure of the application
 function App() { 
+  // Render the App component
   return (
     <div className="App">
 

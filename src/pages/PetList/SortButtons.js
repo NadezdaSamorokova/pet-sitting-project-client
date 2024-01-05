@@ -3,7 +3,9 @@ import Cat from "../../images/PetList/Cat.png"
 import Mouse from "../../images/PetList/Mouse.png"
 import { Link } from "react-router-dom";
 
+// React component for displaying sort buttons
 function SortButtons () {
+  // Render the component
     return (
         <div className="petList-sort">
           <Link className="card-link" to="/pet-list"><button className="button-all">All</button></Link>
@@ -25,7 +27,7 @@ function SortButtons () {
               <p className="filter-text">Other</p>
             </button>
           </Link>
-          </div>
+        </div>
 
     )
 }

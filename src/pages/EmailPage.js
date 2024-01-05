@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 
+// React component for the Email page
 function Email() {
+  // Render the Email component
     return (
       <div className="Email">
         <p className="email-text">Your Application has been sent via e-mail. Expect the answer from the user!</p>

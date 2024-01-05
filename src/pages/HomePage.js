@@ -3,7 +3,9 @@ import Dog from "../images/Homepage/about-dog.jpg"
 import Cat from "../images/Homepage/about-cat.jpg"
 import HighFive from "../images/Homepage/about-highfive.jpg"
 
+// React component for the HomePage page
 function HomePage() {
+  // Render the HomePage component
     return (
       <div className="homePage">
         <div className="introduction">

@@ -2,24 +2,28 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import authService from "./../services/auth.service";
 
-
+// React component for the Signup page
 function SignupPage(props) {
+  // State variables to store email, password, username, error message, and role
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [username, setUsername] = useState("");
   const [errorMessage, setErrorMessage] = useState(undefined);
   const [role, setRole] = useState("owner");
 
+  // Log the current role for debugging purposes
   console.log("THIS IS ROLE", role)
 
+  // Access the navigation function from React Router
   const navigate = useNavigate();
   
+  // Event handlers for updating the state variables
   const handleEmail = (e) => setEmail(e.target.value);
   const handlePassword = (e) => setPassword(e.target.value);
   const handleUsername = (e) => setUsername(e.target.value);
   const handleRole = (e) => setRole(e.target.value);
 
-  
+  // Event handler for submitting the signup form
   const handleSignupSubmit = (e) => {
     e.preventDefault();
     // Create an object representing the request body
@@ -41,7 +45,7 @@ function SignupPage(props) {
       })
   };
 
-  
+  // Render the Signup form
   return (
     <div className="AuthPage">
       <h1 className="auth-title">Sign Up</h1>

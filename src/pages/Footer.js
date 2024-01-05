@@ -1,4 +1,6 @@
+// React component for the Footer page
 function Footer () {
+  // Render the Footer component
     return(
         <footer className="Footer">
           <h3>Contact Us</h3>
@@ -14,4 +16,5 @@ function Footer () {
         </footer>
     )
 }
+
 export default Footer;

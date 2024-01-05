@@ -3,21 +3,30 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import SortButtons from "./SortButtons";
 
+// React component for displaying a list of cats
 function Cats () {
+  // State variable to store the list of cats
   const [cats, setCats] = useState([]);
+  // Log the current list of cats for debugging purposes
   console.log('CAAATSSSSS',cats);
 
+  // API URL from environment variables
   const API_URL = process.env.REACT_APP_API_URL
 
+  // useEffect hook to fetch the list of cats from the server on component mount
   useEffect(() => {
+    // Fetch the list of cats from the server
     axios.get(`${API_URL}/pets/cats`)
     .then(response => {
         setCats(response.data.petsFromDB)
-      console.log("CAATTTSS FROM DDDBB", response.data.petsFromDB)
+        // Log for debugging purposes
+        console.log("CAATTTSS FROM DDDBB", response.data.petsFromDB)
     })
   }, [])
+  // If the list of cats is empty, display a loading message
   if(!cats) return <p>Loading ...</p>
 
+  // Render the component with a list of cats
     return (
             <div className="List">
             <SortButtons/> 
@@ -32,7 +41,7 @@ function Cats () {
                 </Link>
                 ))}
               </div>
-          </div>
+            </div>
     )
 }
 
