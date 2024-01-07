@@ -3,12 +3,10 @@
     flex-direction: column;
     position: relative;
     max-width: 1184px;
-    margin: 35px auto;
-    min-height: 900px;
+    margin: 35px auto 0;
 }
 
 .introduction {
-   /* background-image: url("../images/Homepage/main-picture.jpg");*/
     background-image: url("../images/Homepage/ersatz.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -46,8 +44,11 @@
 }
 
 .link {
-    margin: 0;
-    padding: 0;
+    margin-right: 25px;
+}
+
+.link:last-child {
+    margin-right: 0;
 }
 
 .homePage-button {
@@ -58,7 +59,7 @@
   text-align: center;
   background-color: #556B2F;
   color: #eceaea;
-  margin: 0 25px 0 0;
+  margin: 0;
   padding: 16px;
   border-radius: 10px;
   border: none;
@@ -69,7 +70,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin: 50px;
+    margin: 50px 30px;
 }
 
 .about-section {
@@ -100,9 +101,177 @@
 
 .aboutText {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.2;
     color: #556B2F;
-    padding: 0 20px;
+    padding: 0 40px;
     margin: 20px 0 0;
+}
+
+@media (max-width: 900px) {
+    .aboutImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .aboutText {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .homePage {
+        margin: 20px auto 0;
+    }
+
+    .introduction {
+        background-position: bottom;
+        height: 500px;
+    }
+
+    .introduction-section {
+        width: 300px;
+        padding: 250px 50px 0 30px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .buttons {
+        margin: 25px 0 0;
+    }
+
+    .homePage-button {
+        width: 120px;
+        padding: 12px;
+    }
+
+    .about-us {
+        gap: 20px;
+    }
+
+    .aboutImage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .aboutText {
+        font-size: 15px;
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 590px) {
+    .homePage {
+        margin: 12px auto 0;
+    }
+
+    .introduction {
+        height: 400px;
+    }
+
+    .introduction-section {
+        width: 250px;
+        padding: 250px 20px 0 20px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .link {
+        margin-right: 20px;
+    }
+
+    .homePage-button {
+        width: 100px;
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .about-us {
+        gap: 15px;
+        margin: 40px 10px;
+    }
+
+    .about-section {
+        padding: 10px 0;
+    }
+
+    .aboutImage {
+        width: 100px;
+        height: 100px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .aboutText {
+        font-size: 12px;
+        padding: 0 10px;
+        margin: 12px 0 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .homePage {
+        margin: 10px auto 0;
+    }
+
+    .introduction {
+        height: 250px;
+    }
+
+    .introduction-section {
+        width: 160px;
+        padding: 120px 20px 0 20px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .buttons {
+        margin: 20px 0 0;
+    }
+
+    .link {
+        margin-right: 12px;
+    }
+
+    .homePage-button {
+        width: 74px;
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .about-us {
+        gap: 10px;
+        margin: 25px 8px;
+    }
+
+    .aboutImage {
+        width: 70px;
+        height: 70px;
+    }
+
+    .subtitle {
+        font-size: 11px;
+    }
+
+    .aboutText {
+        font-size: 9px;
+        padding: 0 6px;
+        margin: 10px 0 0;
+    }
 }

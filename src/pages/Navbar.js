@@ -13,21 +13,21 @@ function Navbar () {
     return (
         <nav className="navgation">
           <div className="nav-section">
-            <Link className="link" to="/"><img className="logo" src={logo} alt="home"></img></Link>
+            <Link className="logo-link" to="/"><img className="logo" src={logo} alt="home"></img></Link>
             <div className="find-links">
-              <Link className="link" to="/sitter-list"><button className="find-link">Find a sitter</button></Link>
-              <Link className="link" to="/pet-list"><button className="find-link">Find a pet</button></Link>
+              <Link className="find-link" to="/sitter-list"><button className="find-button">Find a sitter</button></Link>
+              <Link className="find-link" to="/pet-list"><button className="find-button">Find a pet</button></Link>
             </div>
           </div>
             
           {!isLoggedIn && <div className="log-links">
-              <Link className="link" to="/login"><button className="log-link">Log in</button></Link> 
-              <Link className="link" to="/signup"><button className="sing-link">Join now</button></Link>
+              <Link className="log-link" to="/login"><button className="log-button">Log in</button></Link> 
+              <Link className="log-link" to="/signup"><button className="log-button sign-button">Join now</button></Link>
             </div> }
 
-            {isLoggedIn && <div className="profile-links">
-              <Link className="link" to="/profile"><button className="log-link">My Profile</button></Link>
-              <Link className="link" onClick={logOutUser} to="/"><button className="log-link">Log out</button></Link> 
+            {isLoggedIn && <div className="log-links">
+              <Link className="log-link" to="/profile"><button className="log-button">My Profile</button></Link>
+              <Link className="log-link" onClick={logOutUser} to="/"><button className="log-button sign-button">Log out</button></Link> 
             </div>}
         </nav>
     )

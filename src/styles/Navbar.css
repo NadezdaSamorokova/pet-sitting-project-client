@@ -19,9 +19,8 @@ button {
     position: relative;
 }
 
-.link {
-    margin: 0;
-    padding: 0;
+.logo-link {
+    align-self: center;
 }
 
 .logo {
@@ -39,12 +38,21 @@ button {
 }
 
 .find-link {
+    margin-right: 18px;
+}
+
+.find-link:last-child {
+    margin-right: 0;
+}
+
+.find-button {
     border: 0;
     background: 0;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
-    margin-right: 18px;
+    margin: 0;
+    padding: 0;
     color: #556B2F;
     cursor: pointer;
 }  
@@ -56,32 +64,119 @@ button {
     align-items: center;
 }
 
-.profile-links {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    align-items: center;
+.log-link {
+    margin-right: 18px;
 }
 
-.log-link {
+.log-link:last-child {
+    margin-right: 0;
+}
+
+.log-button {
     border: none;
     background: 0;
     font-size: 18px;
     font-weight: 600;
     line-height: 1.2;
-    margin-right: 18px;
+    margin: 0;
+    padding: 0;
     color: #556B2F;
     cursor: pointer;
 }
 
-.sing-link {
-    border: none;
+.sign-button {
     border-radius: 20px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.2;
     color: #eceaea;
     background-color: #A52A2A;
     padding: 10px 15px;
-    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navgation {
+        padding: 30px 20px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .find-links {
+        margin-left: 25px;
+    }
+
+    .find-link {
+        margin-right: 15px;
+    }
+
+    .find-button {
+        font-size: 16px;
+    }
+
+    .log-button {
+        font-size: 16px;
+    }
+
+    .sign-button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 590px) {
+    .navgation {
+        padding: 20px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .find-links {
+        margin-left: 18px;
+    }
+
+    .find-button {
+        font-size: 12px;
+    }
+
+    .log-button {
+        font-size: 12px;
+    }
+
+    .sign-button {
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navgation {
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+    .find-links {
+        margin-left: 10px;
+    }
+
+    .find-link {
+        margin-right: 8px;
+    }
+
+    .find-button {
+        font-size: 10px;
+    }
+
+    .log-link {
+        margin-right: 8px;
+    }
+
+    .log-button {
+        font-size: 10px;
+    }
+
+    .sign-button {
+        padding: 3px 5px;
+    }
 }

@@ -84,3 +84,96 @@
     color: blue;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .auth-title {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 590px) {
+    .AuthPage {
+        min-height: 700px;
+    }
+
+    .auth-title {
+        font-size: 32px;
+    }
+
+    .auth-form {
+        width: 300px;
+        padding: 35px;
+    }
+
+    .auth-input {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    .selectRole {
+        font-size: 14px;
+        margin: 35px 0 8px;
+    }
+
+    .dropdown-role {
+        font-size: 14px;
+    }
+
+    .auth-button {
+        font-size: 14px;
+        margin: 35px 0 0;
+        padding: 14px;
+    }
+
+    .auth-text {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .auth-link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .auth-title {
+        font-size: 26px;
+    }
+
+    .auth-form {
+        width: 280px;
+        padding: 25px;
+        border: solid 2px #556B2F;
+        margin: 30px auto;
+    }
+
+    .auth-input {
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .selectRole {
+        font-size: 12px;
+        margin: 30px 0 8px;
+        height: 20px;
+    }
+
+    .dropdown-role {
+        font-size: 12px;
+        height: 20px;
+    }
+
+    .auth-button {
+        font-size: 12px;
+        margin: 30px 0 0;
+        padding: 10px;
+    }
+
+    .auth-text {
+        font-size: 12px;
+    }
+
+    .auth-link {
+        font-size: 12px;
+    }
+}

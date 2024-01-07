@@ -3,7 +3,7 @@ function Footer () {
   // Render the Footer component
     return(
         <footer className="Footer">
-          <h3>Contact Us</h3>
+          <h3 className="footer-title">Contact Us</h3>
           <p className="footer-text">
             Storkower Straße 132,
             <br />
