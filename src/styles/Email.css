@@ -4,7 +4,7 @@
     position: relative;
     align-items: center;
     margin: 200px auto;
-    width: 1184px;
+    max-width: 1184px;
     min-height: 900px;
 }
 
@@ -12,7 +12,7 @@
     font-size: 25px;
     font-weight: 500;
     line-height: 1.2;
-    margin: 0 0 30px;
+    margin: 0 50px 30px;
 }
 
 .span {
@@ -35,4 +35,44 @@
     border-radius: 10px;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 590px) {
+    .Email {
+        margin: 100px auto;
+    }
+
+    .email-text {
+        font-size: 18px;
+        margin: 0 30px 30px;
+    }
+
+    .span {
+        font-size: 18px;
+    }
+
+    .email-button {
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .Email {
+        margin: 60px auto;
+    }
+
+    .email-text {
+        font-size: 14px;
+    }
+
+    .span {
+        font-size: 14px;
+    }
+
+    .email-button {
+        font-size: 14px;
+        padding: 12px 30px;
+        font-weight: 500;
+    }
 }

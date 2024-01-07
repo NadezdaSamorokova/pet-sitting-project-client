@@ -38,7 +38,7 @@ function SitterCard () {
             </div>
           
             <div className="description-section">
-              <p className="card-text description"><b>About:</b> {user?.about}<br/>
+              <p className="card-text"><b>About:</b> {user?.about}<br/>
               The Cable News Network is a multinational news channel and website headquartered in Atlanta, Georgia, U.S. Founded in 1980 by American media proprietor Ted Turner and Reese Schonfeld as a 24-hour cable</p>
             
               <Link className="card-link" to="/pet-list/pet-card/email"><button className="contact-button" type="submit">Ask to sit</button></Link>

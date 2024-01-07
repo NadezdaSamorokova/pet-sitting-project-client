@@ -44,7 +44,7 @@ return (
               <p className="card-text"><b>Species:</b> {pet?.species}</p>
               <p className="card-text"><b>Size:</b> {pet?.size}</p>
               <p className="card-text"><b>Age:</b> {pet?.age}</p>
-              <p className="card-text description"><b>Description:</b> {pet?.description}<br/>
+              <p className="card-text"><b>Description:</b> {pet?.description}<br/>
               The Cable News Network is a multinational news channel and website headquartered in Atlanta, Georgia, U.S. Founded in 1980 by American media proprietor Ted Turner and Reese Schonfeld as a 24-hour cable</p>
             
               <Link className="card-link" to="/pet-list/pet-card/email"><button className="contact-button" type="submit">Apply as a sitter</button></Link>

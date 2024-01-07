@@ -41,7 +41,7 @@
     flex-direction: column;
     position: relative;
     align-items: start;
-    margin: 94px 0 0;
+    margin: 94px 50px 0;
 }
 
 .card-text {
@@ -51,10 +51,6 @@
     margin: 0 0 8px;
     text-align: start;
 } 
-
-.description {
-    width: 400px;
-}
 
 .contact-button {
     margin: 20px 0 0;
@@ -67,4 +63,99 @@
     color: #eceaea;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .pet-section {
+        gap: 50px;
+    }
+
+    .card-name {
+        font-size: 36px;
+    }
+
+    .description-section {
+        margin: 70px 50px 0 0;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .contact-button {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Card {
+        margin: 30px auto;
+    }
+
+    .pet-section {
+        gap: 40px;
+    }
+
+    .card-name {
+        font-size: 30px;
+    }
+
+    .card-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    .contact-button {
+        font-size: 16px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 590px) {
+    .card-name {
+        font-size: 24px;
+    }
+
+    .card-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .description-section {
+        margin: 50px 50px 0 0;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        width: 160px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pet-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .name-section {
+        align-items: center;
+    }
+
+    .description-section {
+        align-items: center;
+        margin: 0 50px;
+    }
+
+    .card-text {
+        text-align: center;
+    }
 }
