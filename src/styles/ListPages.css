@@ -20,7 +20,7 @@
     flex-direction: row;
     position: relative;
     justify-content: center;
-    margin: 40px 0 0;
+    margin: 40px auto 0;
 }
 
 .button-all {
@@ -29,7 +29,7 @@
     line-height: 1.2;
     text-align: center;
     color: #556B2F;
-    margin: 0 10px 0;
+    margin: 0;
     padding: 10px;
     border-radius: 10px;
     border: #556B2F solid 1px;
@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     width: 150px;
-    margin: 0 10px 0;
+    margin: 0;
     padding: 10px;
     border-radius: 10px;
     border: #556B2F solid 1px;
@@ -66,6 +66,16 @@
     color: #556B2F;
 }
 
+.sortButton-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+.sortButton-link:last-child {
+    margin: 0;
+}
+
 .card-link {
     text-decoration: none;
     color: black;
@@ -73,9 +83,9 @@
 
 .list-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 30px;
-    margin: 40px 50px;
+    margin: 50px 100px;
 }
 
 .list-card {
@@ -90,14 +100,14 @@
 }
 
 .listImage {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 .listName {
-    margin: 8px 0 0;
+    margin: 20px 0 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
@@ -114,7 +124,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    margin: 10px 0 0;
+    margin: 20px 0 0;
 }
 
 .like-button {
@@ -131,4 +141,149 @@
     padding: 0;
     width: 25px;
     background-size: cover;
+}
+
+@media (max-width: 900px) {
+    .sitters-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin: 50px 80px;
+        gap: 20px;
+    }
+
+    .sitters-title {
+        font-size: 32px;
+    }
+
+    .button-all {
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .button-filter {
+        width: 120px;
+    }
+
+    .filter-image {
+        width: 18px;
+    }
+
+    .filter-text {
+        font-size: 14px;
+    }
+
+    .listImage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .listName {
+        font-size: 16px;
+    }
+
+    .like-buttons {
+        margin: 15px 0 0;
+    }
+}
+
+@media (max-width: 590px) {
+    .sitters-title {
+        font-size: 24px;
+        margin: 40px 0 0;
+    }
+
+    .list-container {
+        margin: 40px 80px;
+    }
+
+    .sortButton-link {
+        margin-right: 16px;
+    }
+
+    .button-all {
+        width: 100px;
+    }
+
+    .button-filter {
+        width: 100px;
+    }
+
+    .listImage {
+        width: 150px;
+        height: 150px;
+    }
+
+    .listName {
+        font-size: 14px;
+    }
+
+    .petDates {
+        font-size: 14px;
+    }
+
+    .like-buttons {
+        margin: 12px 0 0;
+    }
+
+    .like-button {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .sitters-title {
+        font-size: 18px;
+        margin: 25px 0 0;
+    }
+
+    .list-container {
+        margin: 25px 40px;
+    }
+
+    .petList-sort {
+        margin: 30px auto 0;
+    }
+
+    .sortButton-link {
+        margin-right: 8px;
+    }
+
+    .button-all {
+        font-size: 12px;
+        width: 70px;
+        padding: 8px;
+    }
+
+    .button-filter {
+        width: 70px;
+        padding: 8px;
+    }
+
+    .filter-image {
+        width: 14px;
+    }
+
+    .filter-text {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+
+    .listName {
+        margin: 15px 0 0;
+        font-size: 12px;
+    }
+
+    .petDates {
+        font-size: 12px;
+    }
+
+    .like-buttons {
+        margin: 10px 0 0;
+    }
 }
