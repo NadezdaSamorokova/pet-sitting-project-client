@@ -43,12 +43,11 @@ function Review (props) {
     return (
         <div className="Review">
           <div className="review-post">
-            <h2>Reviews</h2>
+            <h2 className="review-title">Reviews</h2>
             {props.pet?.reviews.map((reviewData) => (
             <div className="review-section" key={reviewData._id}>
-              <h4>{reviewData?.username}</h4>
+              <h4 className="review-name">{reviewData?.username}</h4>
               <p className="review-text">{reviewData?.review}</p>
-              <hr />
             </div>
            ))}
           </div>

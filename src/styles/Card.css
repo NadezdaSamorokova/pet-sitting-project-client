@@ -41,7 +41,7 @@
     flex-direction: column;
     position: relative;
     align-items: start;
-    margin: 94px 50px 0;
+    margin: 94px 50px 0 0;
 }
 
 .card-text {
