@@ -3,7 +3,6 @@
     flex-direction: column;
     position: relative;
     margin: 40px 0 0;
-    min-height: 900px;
 }
 
 .auth-title {
@@ -92,10 +91,6 @@
 }
 
 @media (max-width: 590px) {
-    .AuthPage {
-        min-height: 700px;
-    }
-
     .auth-title {
         font-size: 32px;
     }
